@@ -16,12 +16,12 @@ variable "availability_zone" {
 
 variable "subnet_prefix" {
   description = "cidr block for the subnet"
-#  default     = ""
+#  default     = "10.0.1.0/24"
 }
 
 variable "private_ip" {
   description = "Private IPv4 address of instance"
-#  default     = ""
+#  default     = "10.0.1.20"
 }
 
 variable "s3_file_url" {
@@ -29,4 +29,3 @@ variable "s3_file_url" {
 #  default     = ""
   type        = string
 }
-
