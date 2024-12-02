@@ -22,8 +22,8 @@ This project automates the deployment of a web application using AWS and Terrafo
 
 ### How to Use:
 1. Upload HTML File to the designated S3 bucket.
-2. Add the provider's information in the [terraform](./terraform_aws_project.tf) file.
-3. Enter the missing default information for the variables in the [variables](./variables.tf) file and remove '#'. (or skip this step and enter the information in steps 5/6)
+2. Add the provider's information in the [provider](./provider.tf) file.
+3. Enter the missing default information for the variables in the [variables](./variables.tf) file
 4. Initialize the working directory: downloads the necessary provider plugins and modules and setting up the backend for storing your infrastructure's state. 
 ```
 terraform init
@@ -41,4 +41,3 @@ terraform apply
 ```
 terraform destroy
 ```
-* note that if you skipped step 3 you can press 'enter' when prompted for the variables! Except for the subnet cidr block it needs to be entered to terminate the project
